@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #EEEB52;
+	margin: 0;
+  bottom: 0;
+  width: 100%;
+
+  &__icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: #000;
+    }
+
+    &:hover svg {
+      fill: #007bff;
+    }
+  }
+}

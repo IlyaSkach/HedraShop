@@ -1,0 +1,39 @@
+.mobile-header {
+  display: none; /* Скрываем по умолчанию */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #EEEB52;
+  border-bottom: 1px solid #ddd;
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__order-button {
+    padding: 10px 20px;
+    background-color: #357041;
+    color: #EEEB52;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+	&__order-icon {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex; /* Отображаем в мобильной версии */
+  }
+}

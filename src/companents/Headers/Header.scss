@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #357041;
+  border-bottom: 1px solid #ddd;
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          text-decoration: none;
+          color: #333;
+          font-size: 1em;
+
+          &:hover {
+            color: #007bff;
+          }
+
+          img {
+            display: none; /* Скрываем изображения в десктопной версии */
+          }
+        }
+      }
+    }
+  }
+
+  &__order-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      display: flex; /* Отображаем в мобильной версии */
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header__logo {
+      display: none; /* Скрываем логотип в мобильной версии */
+    }
+
+    .header__menu {
+      width: 100%;
+      margin-top: 20px;
+    
+
+      ul {
+        // flex-direction: column;
+        width: 100%;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+        li {
+          margin: 0px 0;
+          width: 100%;
+          text-align: center;
+          background-color: none;
+          padding: 10px;
+          border: 1px solid #EEEB52;;
+          border-radius: 4px;
+          
+
+          a {
+            display: block;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              display: block; /* Отображаем изображения в мобильной версии */
+              width: 100px;
+              height: auto;
+              margin-bottom: 10px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .header__order-button {
+      display: none; /* Скрываем кнопку "Заказать" в мобильной версии */
+    }
+  }
+}
