@@ -8,7 +8,6 @@ import spiritsImg from './spirits.png';
 import wineImg from './wine.png';
 import beerImg from './beer.png';
 import rtdImg from './rtd.png';
-import snacksImg from './snacks.png';
 import orderIcon from './delivery.png'; 
 import Slider from '../Slider/Slider';
 import HeroVideo from '../HeroVideo/HeroVideo';
