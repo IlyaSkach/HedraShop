@@ -10,9 +10,13 @@ function Modal({ onClose }) {
     window.location.href = "https://t.me/IlyaSkaAl";
   };
 
+  // const handleWhatsApp = () => {
+  //   window.location.href = "https://wa.me/201222209569";
+  // };
   const handleWhatsApp = () => {
-    window.location.href = "https://wa.me/201222209569";
+    window.open("https://wa.me/201222209569", "_blank");
   };
+  
 
   return (
     <section className="modal-overlay">

@@ -10,6 +10,8 @@ import beerImg from './beer.png';
 import rtdImg from './rtd.png';
 import snacksImg from './snacks.png';
 import orderIcon from './delivery.png'; 
+import Slider from '../Slider/Slider';
+import HeroVideo from '../HeroVideo/HeroVideo';
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +38,7 @@ function Header() {
       <MobileHeader onOrderClick={handleOrderClick} />
       <header className="header">
         <img className="header__logo" src={logo} alt="logo" onClick={handleLogoClick} />
+        <Slider/>
         <nav className="header__menu">
           <ul>
             <li>
@@ -62,14 +65,15 @@ function Header() {
                 RTD
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#faq" onClick={() => handleSectionClick('snacks')}>
                 <img src={snacksImg} alt="SNACKS" />
                 SNACKS
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
+        <HeroVideo/>
         <button className="header__order-button" onClick={handleOrderClick}>
         <img src={orderIcon} alt="Order Icon" className="header__order-icon" />
           delivery</button>
